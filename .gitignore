@@ -1,0 +1,28 @@
+# 通用
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.desktop
+*.log
+
+# CubeMX
+.mxproject
+Firmware/Drivers/
+Firmware/Core/Src/*stm32*.c
+Firmware/Core/Inc/*stm32*.h
+
+# MDK-ARM
+Firmware/MDK-ARM/DebugConfig/
+Firmware/MDK-ARM/RTE/
+Firmware/MDK-ARM/*.s
+Firmware/MDK-ARM/*.uvoptx
+Firmware/MDK-ARM/*.uvguix.*
+Firmware/MDK-ARM/*.dep
+Firmware/MDK-ARM/*.crf
+Firmware/MDK-ARM/*.lnp
+
+# 特殊
+Firmware/MDK-ARM/CraneMachine/
