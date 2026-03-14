@@ -7,6 +7,7 @@
 .DS_Store
 .desktop
 *.log
+Thumbs.db
 
 # CubeMX
 .mxproject
