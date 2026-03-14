@@ -57,6 +57,36 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SG90_ANGLE_Pin GPIO_PIN_0
+#define SG90_ANGLE_GPIO_Port GPIOA
+#define X_28BYJ_CTL1_Pin GPIO_PIN_1
+#define X_28BYJ_CTL1_GPIO_Port GPIOA
+#define X_28BYJ_CTL2_Pin GPIO_PIN_2
+#define X_28BYJ_CTL2_GPIO_Port GPIOA
+#define X_28BYJ_CTL3_Pin GPIO_PIN_3
+#define X_28BYJ_CTL3_GPIO_Port GPIOA
+#define X_28BYJ_CTL4_Pin GPIO_PIN_4
+#define X_28BYJ_CTL4_GPIO_Port GPIOA
+#define JOYTICK_X_Pin GPIO_PIN_6
+#define JOYTICK_X_GPIO_Port GPIOA
+#define JOYTICK_Y_Pin GPIO_PIN_7
+#define JOYTICK_Y_GPIO_Port GPIOA
+#define N20_CTL1_Pin GPIO_PIN_0
+#define N20_CTL1_GPIO_Port GPIOB
+#define N20_CTL2_Pin GPIO_PIN_1
+#define N20_CTL2_GPIO_Port GPIOB
+#define Y_28BYJ_CTL1_Pin GPIO_PIN_8
+#define Y_28BYJ_CTL1_GPIO_Port GPIOA
+#define Y_28BYJ_CTL2_Pin GPIO_PIN_9
+#define Y_28BYJ_CTL2_GPIO_Port GPIOA
+#define Y_28BYJ_CTL3_Pin GPIO_PIN_10
+#define Y_28BYJ_CTL3_GPIO_Port GPIOA
+#define Y_28BYJ_CTL4_Pin GPIO_PIN_11
+#define Y_28BYJ_CTL4_GPIO_Port GPIOA
+#define SG90_CTL1_Pin GPIO_PIN_4
+#define SG90_CTL1_GPIO_Port GPIOB
+#define SG90_CTL2_Pin GPIO_PIN_5
+#define SG90_CTL2_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
