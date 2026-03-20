@@ -75,6 +75,14 @@ void Error_Handler(void);
 #define N20_CTL1_GPIO_Port GPIOB
 #define N20_CTL2_Pin GPIO_PIN_1
 #define N20_CTL2_GPIO_Port GPIOB
+#define LEFT_LIMIT_Pin GPIO_PIN_12
+#define LEFT_LIMIT_GPIO_Port GPIOB
+#define RIGHT_LIMIT_Pin GPIO_PIN_13
+#define RIGHT_LIMIT_GPIO_Port GPIOB
+#define FRONT_LIMIT_Pin GPIO_PIN_14
+#define FRONT_LIMIT_GPIO_Port GPIOB
+#define BACK_LIMIT_Pin GPIO_PIN_15
+#define BACK_LIMIT_GPIO_Port GPIOB
 #define Y_28BYJ_CTL1_Pin GPIO_PIN_8
 #define Y_28BYJ_CTL1_GPIO_Port GPIOA
 #define Y_28BYJ_CTL2_Pin GPIO_PIN_9

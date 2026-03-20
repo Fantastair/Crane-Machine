@@ -397,6 +397,26 @@
               <FilePath>..\Core\Src\byj.c</FilePath>
             </File>
             <File>
+              <FileName>max1616h.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\max1616h.c</FilePath>
+            </File>
+            <File>
+              <FileName>sg90.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\sg90.c</FilePath>
+            </File>
+            <File>
+              <FileName>claw.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\claw.c</FilePath>
+            </File>
+            <File>
+              <FileName>cross.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\cross.c</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>

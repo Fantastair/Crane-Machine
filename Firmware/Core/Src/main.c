@@ -93,6 +93,7 @@ int main(void)
   MX_ADC1_Init();
   MX_TIM3_Init();
   MX_TIM4_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   Cross_Init(); // 初始化十字驱动模块
   Claw_Init();  // 初始化钩爪舵机模块
