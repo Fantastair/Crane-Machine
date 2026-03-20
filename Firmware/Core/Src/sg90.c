@@ -25,7 +25,7 @@ void SG90_Init(SG90_Servo *servo)
  */
 void SG90_PowerOn(SG90_Servo *servo)
 {
-    MAX1616H_SetState(servo->power_channel, MAX1616H_STOP); // 舵机不能反向供电
+    MAX1616H_SetState(servo->power_channel, MAX1616H_FORWARD); // 舵机不能反向供电
     HAL_TIM_PWM_Start(servo->timer, servo->tim_channel);
 }
 
