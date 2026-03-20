@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "byj.h"
+#include "cross.h"
+#include "claw.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,7 +94,8 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-  BYJ_Init(2000); // 初始化步进电机控制模块
+  Cross_Init(); // 初始化十字驱动模块
+  Claw_Init();  // 初始化钩爪舵机模块
   /* USER CODE END 2 */
 
   /* Infinite loop */

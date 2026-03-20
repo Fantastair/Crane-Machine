@@ -17,10 +17,6 @@ typedef enum
 /* 直流电机驱动通道结构体 */
 typedef struct
 {
-    uint16_t in1_pin;             // IN1引脚
-    uint16_t in2_pin;             // IN2引脚
-    GPIO_TypeDef *in1_port;       // IN1引脚所在GPIO端口
-    GPIO_TypeDef *in2_port;       // IN2引脚所在GPIO端口
     TIM_HandleTypeDef *pwm_timer; // PWM定时器句柄
     uint32_t pwm_channel1;        // PWM通道1
     uint32_t pwm_channel2;        // PWM通道2

@@ -8,31 +8,6 @@
 
 #include "byj.h"
 
-/* X轴步进电机 */
-BYJ_Motor x_motor = {
-    BYJ_MOVE_STOP,
-    0,
-    {
-        X_28BYJ_CTL1_Pin,
-        X_28BYJ_CTL2_Pin,
-        X_28BYJ_CTL3_Pin,
-        X_28BYJ_CTL4_Pin
-    },
-    X_28BYJ_CTL1_GPIO_Port
-};
-/* Y轴步进电机 */
-BYJ_Motor y_motor = {
-    BYJ_MOVE_STOP,
-    0,
-    {
-        Y_28BYJ_CTL1_Pin,
-        Y_28BYJ_CTL2_Pin,
-        Y_28BYJ_CTL3_Pin,
-        Y_28BYJ_CTL4_Pin
-    },
-    Y_28BYJ_CTL1_GPIO_Port
-};
-
 /**
  * @brief 步进电机模块初始化
  * @param step_delay_us 每步延时，单位微秒，决定转速
@@ -94,17 +69,4 @@ void BYJ_Stop(BYJ_Motor *motor)
         motor->port,
         motor->pins[0] | motor->pins[1] | motor->pins[2] | motor->pins[3],
         GPIO_PIN_RESET);
-}
-
-/**
- * @brief TIM4定时器周期更新回调函数
- * @param htim TIM_HandleTypeDef结构体指针
- */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-    if (htim->Instance == TIM4)
-    {
-        BYJ_Step(&x_motor);
-        BYJ_Step(&y_motor);
-    }
 }

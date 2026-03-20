@@ -21,7 +21,7 @@
 #include "tim.h"
 
 /* USER CODE BEGIN 0 */
-
+#include "cross.h"
 /* USER CODE END 0 */
 
 TIM_HandleTypeDef htim2;
@@ -326,6 +326,19 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 }
 
 /* USER CODE BEGIN 1 */
+
+/**
+ * @brief 定时中断回调函数
+ * @param htim TIM_HandleTypeDef结构体指针
+ */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM4)
+    {
+        BYJ_Step(&x_motor);
+        BYJ_Step(&y_motor);
+    }
+}
 
 /* USER CODE END 1 */
 

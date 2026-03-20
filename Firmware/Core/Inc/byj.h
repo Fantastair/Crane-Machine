@@ -1,6 +1,8 @@
 #ifndef __BYJ_H__
 #define __BYJ_H__
 
+#include "main.h"
+
 /* 步进电机状态枚举 */
 typedef enum
 {
@@ -17,9 +19,6 @@ typedef struct
     uint16_t pins[4];   // 电机引脚
     GPIO_TypeDef *port; // GPIO端口，所有引脚在同一个端口
 } BYJ_Motor;
-
-extern BYJ_Motor x_motor; // X轴步进电机实例
-extern BYJ_Motor y_motor; // Y轴步进电机实例
 
 void BYJ_Init(uint16_t step_delay_us);
 void BYJ_Step(BYJ_Motor *motor);

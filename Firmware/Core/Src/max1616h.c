@@ -12,6 +12,9 @@ MAX1616H 双路电机驱动模块
  */
 void MAX1616H_Init(MAX1616H_Channel *channel)
 {
+    channel->state = MAX1616H_STOP;
+    channel->speed = MAX1616H_MAX_SPEED; // 默认全速
+    
     HAL_TIM_PWM_Start(channel->pwm_timer, channel->pwm_channel1);
     HAL_TIM_PWM_Start(channel->pwm_timer, channel->pwm_channel2);
 
